@@ -124,13 +124,13 @@ class jcconv:
 if __name__ == '__main__':
     import codecs, sys
     sys.stdout = codecs.getwriter('utf_8')(sys.stdout)
-    
-    print convert(u'あいうえお', jcconv.HIRA, jcconv.HALF, [u'う'])
-    print convert(u'ばいおりん', jcconv.HIRA, jcconv.HALF)
-    print convert(u'ﾊﾞｲｵﾘﾝ', jcconv.HALF, jcconv.HIRA)
-    print convert(u'12345', jcconv.HNUM, jcconv.WNUM)
 
-    print check_hira(u'ひらがな')
-    print check_hira(u'カタカナ')
-    print check_kata(u'ひらがな')
-    print check_kata(u'カタカナ')
+    print(convert(u'あいうえお', jcconv.HIRA, jcconv.HALF, [u'う']))
+    print(convert(u'ばいおりん', jcconv.HIRA, jcconv.HALF))
+    print(convert(u'ﾊﾞｲｵﾘﾝ', jcconv.HALF, jcconv.HIRA))
+    print(convert(u'12345', jcconv.HNUM, jcconv.WNUM))
+
+    print(check_hira(u'ひらがな'))
+    print(check_hira(u'カタカナ'))
+    print(check_kata(u'ひらがな'))
+    print(check_kata(u'カタカナ'))
